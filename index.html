@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <form action="http://localhost:3000/register" method="post" id="registeration-form">
+        <div class="end-point">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="inner-div">
+        
+            <div class="head">
+                <h1 class="color">Get in touch</h1>
+                <p>You can reach us anytime via <span class="color">info@binaryhub.com</span></p>
+            </div>
+            <div class="label-form">
+                <label for="name">Name</label>
+                <input required id="name" name='name' placeholder="Your name" type="text">
+            </div>
+            <div class="label-form">
+                <label  for="email">Email</label>
+                <input required name="email" placeholder="you@company.com" type="text">
+            </div>
+            <div class="selections">
+                <div class="select-head">
+                    <p>Services</p> <div>
+                        <input id="select" type="checkbox">
+               <label class="color" for="select">Select All</label>
+                    </div>
+                </div>
+                <div class="selectors">
+                   <div class="specific-selector">
+                    <input value="web-dev" name="services" id="web-dev" type="checkbox">
+                    <label for="web-dev">Web Development</label>
+                   </div>
+                    <div class="specific-selector">
+                        <input value="digi-mark" name="services" id="digi-mark" type="checkbox">
+                    <label for="digi-mark">Digital Marketing</label>
+                    </div>
+                    <div class="specific-selector">
+                        <input value="e-comm" name="services" id="e-comm" type="checkbox">
+                    <label for="e-comm">Ecommerce</label>
+                    </div>
+                   <div class="specific-selector">
+                    <input value="graph" name="services" id="graph" type="checkbox">
+                    <label for="graph">Graphic Designing</label>
+                   </div>
+                   <div class="specific-selector">
+                    <input value="uiux" name="services" id="uiux" type="checkbox">
+                    <label for="uiux">UIUX Designing</label>
+                   </div>
+                   
+                </div>
+            </div>
+            <div class="message">
+                <label for="msg">Your message</label>
+                <input required name="message" placeholder="Tell us a little about..." type="text">
+            </div>
+            <button >Submit</button>
+        </div>
+    </form>
+</body>
+</html>
